@@ -76,7 +76,13 @@ app.get('/estoque', (req, res) => {
   });
 });
 
+const { exec } = require('child_process');
+
 // Inicia o servidor
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  const url = `http://localhost:${port}`;
+  console.log(`Servidor rodando em ${url}`);
+
+  // Abrir o navegador no Windows
+  exec(`start ${url}`);
 });
