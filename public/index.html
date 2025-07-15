@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form method="POST" action="/produtos">
+    <h1>Cadastro</h1>
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br>
+    <label>Descrição:</label><br>
+    <textarea name="descricao" required></textarea><br>
+    <label>Preço:</label><br>
+    <input type="number" name="preco" step="0.01" required><br>
+    <label>Estoque:</label><br>
+    <input type="number" name="estoque" required><br><br>
+    <button type="submit">Cadastrar</button><br><br>
+    <a href="estoque.html">
+      <button type="button" class="button">Ver estoque</button>
+    </a>
+  </form>
+</body>
+</html>
