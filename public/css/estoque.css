@@ -63,7 +63,7 @@ input[type="number"]:focus {
 /* Botão */
 button {
     padding: 12px;
-    background-color: #007bff;
+    background: linear-gradient(135deg, #526d58, #3ec05a);
     color: white;
     font-weight: bold;
     border: none;
@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-color: #256c51;
+    background-color: #17af75;
 }
 
 /* Resultado */
@@ -81,6 +81,12 @@ button:hover {
     margin-top: 20px;
     font-size: 16px;
     color: #333;
+}
+#lk{
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
 }
 
 /* Responsividade para telas pequenas */

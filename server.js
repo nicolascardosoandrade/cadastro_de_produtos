@@ -50,10 +50,8 @@ app.post('/produtos', (req, res) => {
       console.error('Erro ao inserir produto:', err);
       return res.status(500).send('Erro ao cadastrar produto');
     }
-    res.send(`
-      <h3>Produto cadastrado com sucesso!</h3>
-      <a href="/">Cadastrar outro</a>
-    `);
+   res.redirect('/sucesso.html');
+
   });
 });
 
